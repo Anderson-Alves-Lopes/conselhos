@@ -1,0 +1,9 @@
+Projeto é um site que da (conselho).
+
+Os conselhos são gerados aleatoriamente por uma API JSON do site Advice Slip.
+
+link: https://api.adviceslip.com/
+
+Esse Me deu muito satisfação, mesmo sendo bem simples, pois ja tinha tido uma experiência com essa API que não deu frutos.
+
+Foi usado HTM5, CSS3 e javascript para consumo da API.

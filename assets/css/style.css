@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+body{
+    height:100%;
+}
+@keyframes butterfly{
+    0%{transform:rotate(0);}
+    25%{transform:rotate(40deg);}
+    75%{transform:rotate(-40deg);}
+    100%{transform:rotate(0);}
+}
+
+ img{
+    width:50px;
+    position:relative;
+    animation-name: butterfly;
+    animation-delay: 1s;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+
+body{
+    min-height:100vh;
+    height:100%;
+    background-image:url('../images/intricate-explorer-hlj6xJG30FE-unsplash.jpg');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+body.heaven{
+    background-image:url('../images/stacey-gabrielle-koenitz-rozells-kSY5T6js2KE-unsplash.jpg');
+}
+.vitrine{
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(255,255,255,0.2);
+    z-index:1;
+}
+header{
+    width:100%;
+    text-align:center;
+    padding-top:10px;
+    font-style:italic;
+    font-size:30px;
+    text-shadow:1px 1px 3px #fff;
+    position:relative;
+    z-index:99;
+}
+
+main{
+    position:relative;
+    z-index:999;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 2%;
+}
+main a,
+section.content-conselho a{
+    text-decoration:none;
+    background-color: #000;
+    padding:10px;
+    text-transform:uppercase;
+    color:#fff;
+    border-radius:10px;
+    box-shadow:0 0 5px #fff;   
+    transition:all 0.4s;
+    margin:20px 0;
+}
+main a:hover,
+section.content-conselho a:hover{
+    color:#ccc;
+    padding: 10px 12px;
+    box-shadow:0 0 10px #fff; 
+}
+section.butterfly{
+    
+    max-width:1000px;
+    margin:20px auto;
+    background-color:rgba(200,200,200,0.3);
+    border-radius:5px;
+}
+.butterfly-top{
+    display:flex;
+    justify-content:space-between;
+    margin:auto;
+    position:relative;
+    top:-20px;
+}
+.butterfly-bottom{
+    display:flex;
+    justify-content:space-between;
+    margin:auto;
+    position:relative;
+    bottom:-10px;
+}
+.text-info{
+    padding:20px;
+    color:#000;
+    text-shadow:1px 1px 3px #ccc;
+}
+.text-info h2{
+    text-align:center;
+    font-size:30px; 
+}
+section.content-conselho{
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width:700px;
+    min-height:300px;
+    margin:auto;
+    padding:20px;
+    color:#fff;
+    line-height:35px;
+    background-color:rgba(0,0,0,0.7);
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+footer{
+    margin-top:40px;
+    padding:0 2%;
+    position:relative;
+    z-index:222;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:13px;
+    text-shadow:0 0 3px #fff;
+    font-weight:bold;
+    border-top :1px solid #777;
+}
+footer .social{
+    display:flex;
+    font-size: 20px;
+}
+.social a{
+    color:#111;
+    margin:10px;
+    text-decoration:none;
+}
+@media screen and (max-width: 768px){
+    section.butterfly{
+        width:97%;
+    }
+    img{
+        width:30px;
+    }
+    .butterfly-top{
+        top:-10px;
+    }
+    .container{
+        width:90%;
+    }
+}
+@media screen and (max-width: 500px){
+    header h1{
+        font-size:45px;
+    }
+}
+@media screen and (max-width: 400px){
+    footer .social{
+       flex-direction:column;
+    }
+}
